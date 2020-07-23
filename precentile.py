@@ -12,8 +12,6 @@ def decoder2(path):
             a = re.sub(r"[-T:]", "", a)
             a = DT.datetime.strptime(a, '%Y%m%d%H%M%S')
             b = i[1]
-            if b > 10000000:
-                print(b)
             dictOfData.append(b)
     return dictOfData
 def AnomaliesCatcher(oldDataPath , newDataPath , threshold):
